@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:Lecture6Notes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF191919">
+        <RichTextBox Margin="466,38,22,28">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Canvas Background="#FF757474" Margin="42,60,418,59">
+            <Label Content="First Name" Canvas.Left="23" Canvas.Top="23" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="Last Name" Canvas.Left="23" Canvas.Top="104" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="CSI Grade" Canvas.Left="23" Canvas.Top="192" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="GenEd Grade" Canvas.Left="170" Canvas.Top="192" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtFirstName" Canvas.Left="23" TextWrapping="Wrap" Canvas.Top="62" Width="120" HorizontalAlignment="Center" Height="37" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtLastName" Canvas.Left="23" TextWrapping="Wrap" Canvas.Top="143" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33"/>
+            <TextBox x:Name="txtCSIGrade" Canvas.Left="23" TextWrapping="Wrap" Canvas.Top="242" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33"/>
+            <TextBox x:Name="txtGenEd" Canvas.Left="170" TextWrapping="Wrap" Canvas.Top="242" Width="120" HorizontalAlignment="Center" Height="33" VerticalAlignment="Top"/>
+        </Canvas>
 
     </Grid>
 </Window>
