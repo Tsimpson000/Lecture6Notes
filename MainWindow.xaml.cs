@@ -36,9 +36,26 @@ namespace Lecture6Notes
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Student> students = new List<Student>();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnAddStudent_Click(object sender, RoutedEventArgs e)
+        {
+            string firstName = txtFirstName.Text;
+            string lastName = txtLastName.Text;
+            double csiGrade = double.Parse(txtCSIGrade.Text);
+            double genEdGrade = double.Parse(txtGenEd.Text);
+
+            Student student = new Student(firstName, lastName, csiGrade, genEdGrade);
+
+            //add student to list
+            students.Add(student);
+
+            //Display student from list
+            runDisplay.Text = students[0].FirstName;
         }
     }
 }
