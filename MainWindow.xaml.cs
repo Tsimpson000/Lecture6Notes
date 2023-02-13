@@ -23,6 +23,8 @@ using System.Windows.Shapes;
 //What is a class method?
 
 //Review: What’s the name for any field, constructor, property or method that is part of a class?
+//Members
+
 //Review: What are the 4 parts of declaring a method?
 //What keyword allows you to access members related to the specific instance?
 //A method build inside a class has access to what, even it’s access modifier is set to private?
@@ -55,7 +57,7 @@ namespace Lecture6Notes
             students.Add(student);
 
             //Display student from list
-            runDisplay.Text = students[0].FirstName;
+            runDisplay.Text = students[0].FirstName + " " + students[0].LastName + " " + students[0].CsiGrade + " " + students[0].GenEdGrade;
         }
     }
 }
