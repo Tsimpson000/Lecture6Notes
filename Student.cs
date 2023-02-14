@@ -29,5 +29,14 @@ namespace Lecture6Notes
         public string LastName { get => _lastName; set => _lastName = value; }
         public double CsiGrade { get => _csiGrade; set => _csiGrade = value; }
         public double GenEdGrade { get => _genEdGrade; set => _genEdGrade = value; }
+
+        public double StudentAverage()
+        {
+            return (_csiGrade + _genEdGrade / 2);
+        }
+        public override string ToString()
+        {
+            return $"{this._firstName} {this._lastName} - CSI grade {this._csiGrade} - GenEd Grade {this._genEdGrade} - Average {StudentAverage()}";
+        }
     }
 }
